@@ -17,7 +17,7 @@ function writeScreen(input: string) {
     }
 }
 
-input.onButtonPressed(Button.A, function() {
+input.onButtonPressed(Button.A, function () {
     serial.writeLine("A");
 })
 
@@ -29,8 +29,8 @@ input.onButtonPressed(Button.AB, function () {
     serial.writeLine("AB");
 })
 
-while(true) {
-    let bufferedText = serial.readString();
+while (true) {
+    let bufferedText = serial.readLine();
 
     if (bufferedText != "") {
         writeScreen(bufferedText);

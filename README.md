@@ -13,3 +13,7 @@ Control a BBC Microbit through the USB port over serial to run code on seperate 
 2. Create a new project, paste in the contents of `microbit.ts` from the `src` folder
 3. Click the download button and save it to your Microbit
 4. Once the orange light on the Microbit becomes solid again, it is finished flashing and is good to go
+
+## Misc info
+
+- Microbit reads line from serial port, so always write new lines rather than relying on the buffer, since relying on the buffer can cause broken images

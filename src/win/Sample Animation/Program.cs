@@ -31,7 +31,7 @@ namespace Sample_Animation
             SerialPort serialPort = sender as SerialPort;
             string data = serialPort.ReadLine();
 
-            if (data != null) Console.WriteLine($"Button pressed: {data}");
+            if (data != null) Console.WriteLine(data);
         }
 
         // In this example, displays two frames of a heart
@@ -46,15 +46,19 @@ namespace Sample_Animation
             {
                 if (frame == 0)
                 {
-                    serialPort.WriteLine(frame0);
-                    Console.WriteLine($"Frame out: {frame0}");
+                    string frameCommand = $"Display.matrix {frame0}";
+
+                    serialPort.WriteLine(frameCommand);
+                    Console.WriteLine(frameCommand);
 
                     frame++;
                 }
                 else
                 {
-                    serialPort.WriteLine(frame1);
-                    Console.WriteLine($"Frame out: {frame1}");
+                    string frameCommand = $"Display.matrix {frame1}";
+
+                    serialPort.WriteLine(frameCommand);
+                    Console.WriteLine(frameCommand);
 
                     frame--;
                 }

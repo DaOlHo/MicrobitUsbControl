@@ -6,3 +6,11 @@ E:\CS Projects\MicrobitUsbControl\Sample Animation\obj\Debug\Sample Animation.cs
 E:\CS Projects\MicrobitUsbControl\Sample Animation\obj\Debug\Sample Animation.csproj.CoreCompileInputs.cache
 E:\CS Projects\MicrobitUsbControl\Sample Animation\obj\Debug\Sample Animation.exe
 E:\CS Projects\MicrobitUsbControl\Sample Animation\obj\Debug\Sample Animation.pdb
+E:\CS Projects\MicrobitUsbControl\src\win\Sample Animation\bin\Debug\Sample Animation.exe.config
+E:\CS Projects\MicrobitUsbControl\src\win\Sample Animation\bin\Debug\Sample Animation.exe
+E:\CS Projects\MicrobitUsbControl\src\win\Sample Animation\bin\Debug\Sample Animation.pdb
+E:\CS Projects\MicrobitUsbControl\src\win\Sample Animation\obj\Debug\Sample Animation.csproj.AssemblyReference.cache
+E:\CS Projects\MicrobitUsbControl\src\win\Sample Animation\obj\Debug\Sample Animation.csproj.SuggestedBindingRedirects.cache
+E:\CS Projects\MicrobitUsbControl\src\win\Sample Animation\obj\Debug\Sample Animation.csproj.CoreCompileInputs.cache
+E:\CS Projects\MicrobitUsbControl\src\win\Sample Animation\obj\Debug\Sample Animation.exe
+E:\CS Projects\MicrobitUsbControl\src\win\Sample Animation\obj\Debug\Sample Animation.pdb

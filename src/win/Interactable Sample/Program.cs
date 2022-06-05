@@ -23,6 +23,8 @@ namespace Sample_Animation
             serialPort.DataReceived += new SerialDataReceivedEventHandler(rotatableHeart.sp_DataReceived);
             serialPort.Open();
 
+            rotatableHeart.displayCurrentFrame();
+
             Console.Read(); // Keep console open
         }
 
@@ -50,8 +52,10 @@ namespace Sample_Animation
 
         public void displayCurrentFrame()
         {
-            serialPort.WriteLine(currentFrame);
-            Console.WriteLine($"Frame out: {currentFrame}");
+            string frameCommand = $"Display.matrix {currentFrame}";
+
+            serialPort.WriteLine(frameCommand);
+            Console.WriteLine(frameCommand);
         }
 
         public void rotateFrame(int rotQuarter)
@@ -74,14 +78,14 @@ namespace Sample_Animation
             SerialPort serialPort = sender as SerialPort;
             string data = serialPort.ReadLine().Trim();
 
-            if (data == "A" || data == "AB" || data == "B")
+            if (data == "btnPressed.A" || data == "btnPressed.AB" || data == "btnPressed.B")
             {
-                Console.WriteLine($"Button pressed: {data}");
+                Console.WriteLine(data);
 
                 int rotQuarter = 0;
 
-                if (data == "A") rotQuarter = -1;
-                else if (data == "B") rotQuarter = 1;
+                if (data == "btnPressed.A") rotQuarter = -1;
+                else if (data == "btnPressed.B") rotQuarter = 1;
 
                 rotateFrame(rotQuarter);
                 displayCurrentFrame();
